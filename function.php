@@ -1,13 +1,13 @@
 <?php
 
+/**
+ * @return string
+ */
 function showSomething()
 {
     return 'SOMETHING';
 }
 
-showSomething();
-
-// hw 2-1
 /**
  * @param $args
  * @param bool $needReturn
@@ -26,8 +26,10 @@ function task1($args, $needReturn = false)
     return null;
 }
 
-// hw 2-2
-
+/**
+ * @param mixed ...$args
+ * @return mixed|string
+ */
 function task2(...$args)
 {
     $operation = $args[0];
@@ -60,8 +62,11 @@ function task2(...$args)
     return $result;
 }
 
-// hw 2-3
-
+/**
+ * @param $col
+ * @param $rows
+ * @return string
+ */
 function task3($col, $rows)
 {
     if ($col < 1 || $rows < 1) {
@@ -81,16 +86,18 @@ function task3($col, $rows)
     echo '</table>';
 }
 
-// hw 2-4
-
+/**
+ * @param $zone
+ */
 function task4($zone)
 {
     date_default_timezone_set($zone);
     echo date('d.m.Y H:i') . '<br>';
 }
 
-// hw 2-6
-
+/**
+ * @param $name
+ */
 function task6($name)
 {
     echo file_get_contents($name);
