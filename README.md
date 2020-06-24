@@ -1,3 +1,3 @@
-# PHP-course-hw
+# PHP-course-hw LoftSchool
 
 week 1
